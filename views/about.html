@@ -5,8 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: white;
+        height: 35px;
+        position: sticky;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      body {
+        background-color: lightskyblue;
+      }
+
+      h1 {
+        padding-left: 2%;
+        font-size: 1.3rem;
+        padding-top: 5px;
+        font-family: "Inter";
+      }
+
+      span {
+        padding-right: 2%;
+        font-size: 1rem;
+        padding-top: 5px;
+      }
+
+      span a {
+        text-decoration: none;
+        padding-right: 5px;
+        color: black;
+      }
+
+      a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      p {
+        display: flex;
+        justify-content: center;
+        padding-top: 5vh;
+        font-size: 22px;
+      }
+
+      img {
+        width: 350px;
+        padding: 5px;
+      }
+    </style>
   </head>
   <body>
-    This is the about page
+    <header>
+      <h1>About Node</h1>
+      <span>
+        <a href="/">Home</a>
+        <a href="/products">products</a>
+        <a href="/subscribe">subscribe</a>
+        <a href="/contact">contact</a>
+      </span>
+    </header>
+    <p>
+      Node.js is an open-souirce, cross-platform JavaScript runtime environment
+    </p>
+    <p>
+      <img
+        src="https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        alt=""
+      />
+    </p>
+    <p>Do you want to learn more and install node.js?</p>
+    <p>
+      <a href="https://nodejs.org/en/">Click here!</a>
+    </p>
   </body>
 </html>

@@ -5,8 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subscribe</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: white;
+        height: 35px;
+        position: sticky;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      body {
+        background-color: lightskyblue;
+      }
+
+      h1 {
+        padding-left: 2%;
+        font-size: 1.3rem;
+        padding-top: 5px;
+        font-family: "Inter";
+      }
+
+      span {
+        padding-right: 2%;
+        font-size: 1rem;
+        padding-top: 5px;
+      }
+
+      span a {
+        text-decoration: none;
+        padding-right: 5px;
+        color: black;
+      }
+
+      a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      p {
+        display: flex;
+        justify-content: center;
+        padding-top: 5vh;
+        font-size: 22px;
+      }
+
+      p a {
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
-    This is the subscribe page. Click here to subscribe now
+    <header>
+      <h1>Subscribe</h1>
+      <span>
+        <a href="/">Home</a>
+        <a href="/products">products</a>
+        <a href="/subscribe">subscribe</a>
+        <a href="/contact">contact</a>
+      </span>
+    </header>
+    <p>Do you want to learn more node.js and other programming languages?</p>
+    <p>Subscribe to some of my favourite coding tutorial youtubers!</p>
+    <p>
+      <a href="https://www.youtube.com/@programmingwithmosh"
+        >Programming with Mosh</a
+      >
+    </p>
+    <p><a href="https://www.youtube.com/@DaveGrayTeachesCode">Dave Gray</a></p>
+    <p><a href="https://www.youtube.com/@NetNinja">Net Ninja</a></p>
   </body>
 </html>

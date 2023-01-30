@@ -30,9 +30,14 @@ const server = http.createServer((request, response) => {
       routes.subscribePage(path, request.url, response);
       break;
     case "/products":
-      path += "subscribe.html";
+      path += "products.html";
       response.statusCode = 200;
       routes.productsPage(path, request.url, response);
+      break;
+    case "/spiderMonkey":
+      path += "spiderMonkey.html";
+      response.statusCode = 200;
+      routes.spiderMonkeyPage(path, request.url, response);
       break;
     default:
       path += "404.html";

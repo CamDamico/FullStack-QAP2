@@ -65,6 +65,18 @@ function productsPage(path, event, response) {
   );
 }
 
+// SpiderMonkey page
+
+function spiderMonkeyPage(path, event, response) {
+  displayFile(path, response);
+  myEmitter.emit(
+    "route",
+    event,
+    "information",
+    "the SpiderMonkey page was visited."
+  );
+}
+
 // 404 page
 
 function fourOffourPage(path, event, response) {
@@ -97,4 +109,5 @@ module.exports = {
   subscribePage,
   fourOffourPage,
   productsPage,
+  spiderMonkeyPage,
 };

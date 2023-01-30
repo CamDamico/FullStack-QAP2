@@ -5,9 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>homepage</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: white;
+        height: 35px;
+        position: sticky;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      body {
+        background-color: lightskyblue;
+      }
+
+      h1 {
+        padding-left: 2%;
+        font-size: 1.3rem;
+        padding-top: 5px;
+        font-family: "Inter";
+      }
+
+      span {
+        padding-right: 2%;
+        font-size: 1rem;
+        padding-top: 5px;
+      }
+
+      span a {
+        text-decoration: none;
+        padding-right: 5px;
+        color: black;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding-top: 50px;
+        padding-left: 25%;
+      }
+
+      li a {
+        text-decoration: none;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.42);
+        color: black;
+        font-size: 20px;
+      }
+
+      a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <h1>This is the home page</h1>
+    <header>
+      <h1>Welcome to the home page</h1>
+      <span><a href="/spiderMonkey">Secret Page</a></span>
+    </header>
     <ul>
       <li><a href="/about">about</a></li>
       <li><a href="/products">products</a></li>
